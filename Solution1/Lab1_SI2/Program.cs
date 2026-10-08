@@ -1,9 +1,11 @@
-﻿namespace Lab1_SI2;
+﻿using F23.StringSimilarity;
+
+namespace Lab1_SI2;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        Console.WriteLine("The singularity is: {0}", new Cosine().Similarity("Hello, World!", "Hello, Class!"));
     }
 }
